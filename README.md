@@ -1,16 +1,9 @@
 # bubbles_background
 
-A new Flutter project.
+Flutter Live Background.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Live background consits of random generated bubbles.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="./bubbles.gif" alt="bubbles.gif" height="720">
