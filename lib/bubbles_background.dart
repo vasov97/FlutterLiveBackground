@@ -56,7 +56,7 @@ class _BubblesBackgroundState extends State<BubblesBackground>
     controller!.forward();
     particles = List.generate(widget.maxBubbles, (index) {
       var element = Bubble();
-      element.offset = const Offset(-1, -1);
+      element.offset = Offset(random.nextDouble()*500, random.nextDouble()*700);
       element.speed = random.nextDouble() * widget.maxSpeed;
       element.theta = random.nextDouble() * widget.maxTheta;
       element.radius = random.nextDouble() * widget.maxRadius;

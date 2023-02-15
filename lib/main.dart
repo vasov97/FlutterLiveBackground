@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
@@ -17,24 +18,21 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          centerTitle: true,
-          backgroundColor: Colors.black45,
-          title: const Text(
-            'Bubbles backgorund',
-            style: TextStyle(
-              color:  Color.fromARGB(234, 18, 203, 231),
-            ),
-          ),
+          backgroundColor: Colors.transparent,
         ),
-        body: const BubblesBackground(
-          maxTheta: 2.0*pi,
-          maxRadius: 6,
-          maxSpeed: 0.2,
-          maxBubbles: 90,
-          bubblesColor:  Color.fromARGB(234, 18, 203, 231),
-          tweenBegin: -10.0,
-          tweenEnd: 250.0,
-          animationDurationInSeconds: 3,
+        body: Stack(
+          children: const [
+            BubblesBackground(
+              maxTheta: 2.0 * pi,
+              maxRadius: 6,
+              maxSpeed: 0.4,
+              maxBubbles: 90,
+              bubblesColor: Color.fromARGB(234, 18, 203, 231),
+              tweenBegin: 100.0,
+              tweenEnd: 250.0,
+              animationDurationInSeconds: 6,
+            ),
+          ],
         ),
         backgroundColor: Colors.black45,
       ),
